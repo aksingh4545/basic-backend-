@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('views')); // Serve HTML files
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/authDB', {
+mongoose.connect('mongodb://localhost:27017/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
